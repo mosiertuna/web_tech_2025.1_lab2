@@ -49,6 +49,8 @@ function AddUser({ onAdd }) {
           <input id="username" type="text" value={user.username} onChange={handleChange} /><br />
           <label>Email: </label>
           <input id="email" type="text" value={user.email} onChange={handleChange} /><br />
+          <label>City: </label>
+          <input id="city" type="text" value={user.address.city} onChange={handleChange} /><br />
           <button onClick={handleAdd}>Thêm</button>
           <button onClick={() => setAdding(false)}>Hủy</button>
         </div>
